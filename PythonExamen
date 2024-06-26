@@ -1,0 +1,13 @@
+import requests
+
+Cantidad = input("Que cantidad de productos queres: ")
+TipodeProducto = input("Que tipo de producto queres: ")
+#Cantidad = int(Cantidad)
+url = ("https://fakestoreapi.com/products/category/" + TipodeProducto)
+lista = requests.get(url)
+
+
+
+print(lista.text)
+
+#lo cambie pero no lo pude hacer 
